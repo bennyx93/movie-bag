@@ -52,6 +52,14 @@ python2 = ["typed-ast (>=1.4.3)"]
 uvloop = ["uvloop (>=0.15.2)"]
 
 [[package]]
+name = "blinker"
+version = "1.4"
+description = "Fast, simple object-to-object and broadcast signaling"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "cffi"
 version = "1.15.0"
 description = "Foreign Function Interface for Python calling C code."
@@ -153,6 +161,18 @@ Werkzeug = ">=0.14"
 
 [package.extras]
 asymmetric_crypto = ["cryptography (>=35.0.0)"]
+
+[[package]]
+name = "flask-mail"
+version = "0.9.1"
+description = "Flask extension for sending email"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+blinker = "*"
+Flask = "*"
 
 [[package]]
 name = "flask-mongoengine"
@@ -379,7 +399,7 @@ email = ["email-validator"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "40ec70113c186e2f59924e50d67ef216856e78faedd31f1ad1c01974040091fd"
+content-hash = "81b4ab9cca86fbf7049ce37d5adf7c40d2e0771356f57285ba0e3dec8a6ae9b5"
 
 [metadata.files]
 aniso8601 = [
@@ -401,6 +421,9 @@ bcrypt = [
 black = [
     {file = "black-21.12b0-py3-none-any.whl", hash = "sha256:a615e69ae185e08fdd73e4715e260e2479c861b5740057fde6e8b4e3b7dd589f"},
     {file = "black-21.12b0.tar.gz", hash = "sha256:77b80f693a569e2e527958459634f18df9b0ba2625ba4e0c2d5da5be42e6f2b3"},
+]
+blinker = [
+    {file = "blinker-1.4.tar.gz", hash = "sha256:471aee25f3992bd325afa3772f1063dbdbbca947a041b8b89466dc00d606f8b6"},
 ]
 cffi = [
     {file = "cffi-1.15.0-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:c2502a1a03b6312837279c8c1bd3ebedf6c12c4228ddbad40912d671ccc8a962"},
@@ -480,6 +503,9 @@ flask-bcrypt = [
 flask-jwt-extended = [
     {file = "Flask-JWT-Extended-4.3.1.tar.gz", hash = "sha256:ad6977b07c54e51c13b5981afc246868b9901a46715d9b9827898bfd916aae88"},
     {file = "Flask_JWT_Extended-4.3.1-py2.py3-none-any.whl", hash = "sha256:c82c9e505bc96f4a5186de31c05262dbcde6fa10581e9aa46df8f99ca04be2c3"},
+]
+flask-mail = [
+    {file = "Flask-Mail-0.9.1.tar.gz", hash = "sha256:22e5eb9a940bf407bcf30410ecc3708f3c56cc44b29c34e1726fe85006935f41"},
 ]
 flask-mongoengine = [
     {file = "flask-mongoengine-1.0.0.tar.gz", hash = "sha256:ce68726d2be8d88006e88f17e4be3b7ad07c79ca8dedb60653d3dab5d9485840"},
