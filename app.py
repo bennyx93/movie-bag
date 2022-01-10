@@ -18,9 +18,9 @@ api = Api(app, errors=errors)
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
 
-app.config['MONGODB_SETTINGS'] = {
- 'host': 'mongodb://localhost/movie-bag'
-}
+# app.config['MONGODB_SETTINGS'] = {
+#  'host': 'mongodb://localhost/movie-bag'
+# }
 
 initialize_db(app)
 # https://flask.palletsprojects.com/en/2.0.x/blueprints/
